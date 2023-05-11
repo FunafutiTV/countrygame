@@ -1,0 +1,45 @@
+html {
+  font-size: 1.5vw;
+}
+
+main {
+  text-align: center;
+  margin: 13vw 30vw 0 30vw;
+}
+
+.click-zone {
+  cursor: grab;
+}
+
+.click-zone, .click-zone-blocked {
+  border: 2px solid rgb(61, 42, 5);
+  padding-top: 5vw;
+  padding-bottom: 5vw;
+  background-color: rgb(240, 240, 240);
+}
+
+.click-zone:hover {
+  background-color: rgb(220, 220, 220);
+}
+
+.click-zone:active {
+  background-color: rgb(200, 200, 200);
+}
+
+.click-zone, .timer {
+  user-select: none;
+}
+
+strong {
+  font-size: 110%;
+}
+
+.rules, .rules-out {
+  position: absolute;
+  margin: -5vw 30vw 0 0;
+
+}
+
+.rules-out {
+  display: none;
+}
