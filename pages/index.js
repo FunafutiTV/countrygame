@@ -30,12 +30,14 @@ export default function Home({ isConnected }) {
   let [highscores, setHighscores] = useState(null);
 
   useEffect(() => {
-    (async () => {
-      setHighscores(null);
-      const results = await fetch("/api/list");
-      const resultsJson = await results.json();
-      setHighscores(resultsJson);
-    })();
+    setTimeout(() => {
+      (async () => {
+        setHighscores(null);
+        const results = await fetch("/api/list");
+        const resultsJson = await results.json();
+        setHighscores(resultsJson);
+      })();
+    }, 1500)
   }, [pseudo])
 
   useEffect(() => {
@@ -55,7 +57,7 @@ export default function Home({ isConnected }) {
       <Timer firstClick={firstClick} refresh={refresh} setTimerZero={setTimerZero}/>
       <DisplayCPS clicks={nbClicks} setRefresh={setRefresh}/>
       <Ranking name={pseudo} clicks={nbClicks} highscores={highscores}/>
-      <Prompt setPseudo={setPseudo}/>
+      <Prompt setPseudo={setPseudo} timerZero={timerZero}/>
     </main>
   )
 }
