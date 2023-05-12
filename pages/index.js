@@ -27,15 +27,16 @@ export default function Home({ isConnected }) {
   let [nbClicks, setNbClicks] = useState(null);
   let [refresh, setRefresh] = useState(false);
   let [pseudo, setPseudo] = useState(null);
-  let [highscores, setHighscores] = useState([]);
+  let [highscores, setHighscores] = useState(null);
 
   useEffect(() => {
     (async () => {
+      setHighscores(null);
       const results = await fetch("/api/list");
       const resultsJson = await results.json();
       setHighscores(resultsJson);
     })();
-  }, [])
+  }, [pseudo])
 
   useEffect(() => {
     if (refresh) {
