@@ -108,6 +108,10 @@ button:hover span {
   background: none;
 }
 
+button.hidden {
+  visibility: hidden;
+}
+
 @media screen and (min-width:56em) {
 
   html {
