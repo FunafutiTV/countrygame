@@ -33,8 +33,8 @@ return (
         <li key={highscore._id}>{currentIndex + 1 + index} - {highscore.name} : {highscore.score} CPS</li>
       ))}
     </ul>
-    <button onClick={goBackItems} className={(currentIndex === 0) ? hidden : visible}><span>{`<-`}</span></button>
-    <button onClick={loadMoreItems} className={(currentIndex + itemsPerPage >= highscores.length) ? hidden : visible}><span>{`->`}</span></button>
+    <button onClick={goBackItems} className={(currentIndex === 0) ? "hidden" : "visible"}><span>{`<-`}</span></button>
+    <button onClick={loadMoreItems} className={(currentIndex + itemsPerPage >= highscores.length) ? "hidden" : "visible"}><span>{`->`}</span></button>
   </div>
 );
 }
