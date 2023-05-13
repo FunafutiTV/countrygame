@@ -21,7 +21,7 @@ export default function Ranking({ clicks, name, highscores }) {
     </div>
   );
 
-  highscores.sort((a, b) => {if (a.score < b.score) {return 1} else if (a.score > b.score) {return -1} else {return 0}})
+  highscores.sort((a, b) => {if (parseInt(a.score) < parseInt(b.score)) {return 1} else if (parseInt(a.score) > parseInt(b.score)) {return -1} else {return 0}})
 
   const loadMoreItems = () => {setCurrentIndex(currentIndex + itemsPerPage)};
   const goBackItems = () => {setCurrentIndex(currentIndex - itemsPerPage)}
