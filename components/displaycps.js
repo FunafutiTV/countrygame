@@ -13,7 +13,7 @@ export default function DisplayCPS({ clicks, setRefresh }) {
     return (
         <section>
             <div>{CPS}</div>
-            <div>{CPS ? <button onClick={handleRefreshClick}>Recommencer</button> : null}</div>
+            <div>{CPS ? <button onClick={handleRefreshClick}><span>Recommencer</span></button> : null}</div>
         </section>
     )
 }

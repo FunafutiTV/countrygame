@@ -14,7 +14,12 @@ export default function Ranking({ clicks, name, highscores }) {
     }
   }, [name])
 
-  if (!highscores) return <div>Loading...</div>;
+  if (!highscores) return (
+    <div className="ranking">
+      <h1>Classement</h1>
+      <p>Chargement...</p>
+    </div>
+  );
 
   highscores.sort((a, b) => {if (a.score < b.score) {return 1} else if (a.score > b.score) {return -1} else {return 0}})
 
@@ -22,14 +27,14 @@ export default function Ranking({ clicks, name, highscores }) {
   const goBackItems = () => {setCurrentIndex(currentIndex - itemsPerPage)}
 
 return (
-  <div>
+  <div className="ranking">
     <h1>Classement</h1>
     <ul>{highscores.slice(currentIndex, currentIndex + itemsPerPage).map((highscore, index) => (
         <li key={highscore._id}>{currentIndex + 1 + index} - {highscore.name} : {highscore.score} CPS</li>
       ))}
     </ul>
-    <button onClick={goBackItems} disabled={currentIndex === 0}>{`<-`}</button>
-    <button onClick={loadMoreItems} disabled={currentIndex + itemsPerPage >= highscores.length}>{`->`}</button>
+    <button onClick={goBackItems} disabled={currentIndex === 0}><span>{`<-`}</span></button>
+    <button onClick={loadMoreItems} disabled={currentIndex + itemsPerPage >= highscores.length}><span>{`->`}</span></button>
   </div>
 );
 }

@@ -53,11 +53,16 @@ export default function Home({ isConnected }) {
 
   return (
     <main>
-      <ClickZone setFirstClick={setFirstClick} timerZero={timerZero} setNbClicks={setNbClicks}/>
-      <Timer firstClick={firstClick} refresh={refresh} setTimerZero={setTimerZero}/>
-      <DisplayCPS clicks={nbClicks} setRefresh={setRefresh}/>
-      <Ranking name={pseudo} clicks={nbClicks} highscores={highscores}/>
-      <Prompt setPseudo={setPseudo} timerZero={timerZero}/>
+      <h1 id="main-title">CLICKTEST</h1>
+      <section id="main-container">
+        <ClickZone setFirstClick={setFirstClick} timerZero={timerZero} setNbClicks={setNbClicks}/>
+        <Timer firstClick={firstClick} refresh={refresh} setTimerZero={setTimerZero}/>
+        <DisplayCPS clicks={nbClicks} setRefresh={setRefresh}/>
+        <Prompt setPseudo={setPseudo} timerZero={timerZero}/>
+      </section>
+      <div className="ranking-container">
+        <Ranking name={pseudo} clicks={nbClicks} highscores={highscores}/>
+      </div>
     </main>
   )
 }
