@@ -12,13 +12,19 @@ import Claimed from 'components/claimed.js'
 export default function App({ Component, pageProps }) {
   let country = "Somaliland";
   let [language, setLanguage] = useState("en");
-  let [componentArray, setComponentArray] = useState([<Flag country={country} language={language}/>,<Population country={country} language={language}/>,
-        <Location country={country} language={language}/>,<Capital country={country} language={language}/>,
-        <Shape country={country} language={language}/>,<Claimed country={country} language={language}/>])
+  let componentArray = ["<Flag country={country} language={language}/>","<Population country={country} language={language}/>",
+        "<Location country={country} language={language}/>","<Capital country={country} language={language}/>",
+        "<Shape country={country} language={language}/>","<Claimed country={country} language={language}/>"]
 
   useEffect(() => {
     const job = schedule.scheduleJob('* * * * *', () => {
-      setComponentArray(componentArray.map(value => ({ value, sort: Math.random() })).sort((a, b) => a.sort - b.sort).map(({ value }) => value))
+      componentArray = componentArray.map(value => ({ value, sort: Math.random() })).sort((a, b) => a.sort - b.sort).map(({ value }) => value);
+      console.log(componentArray)
+      const response = fetch('/api/post', {
+        method: 'POST',
+        body: componentArray,
+      })
+
     });
     return () => {
       job.cancel();
