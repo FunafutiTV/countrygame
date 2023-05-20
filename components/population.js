@@ -1,10 +1,9 @@
 import countrylist from '../public/countrylist.js'
 
 export default function Population({ country, language }) {
-    let population = countrylist[country].population;
     return(
         <div>
-            <h2>Population : {language === "fr" ? population : population.replaceAll(' ', ',')}</h2>
+            <h2>Population : {language === "fr" ? countrylist[country].population.fr : countrylist[country].population.en}</h2>
         </div>
     )
 }
