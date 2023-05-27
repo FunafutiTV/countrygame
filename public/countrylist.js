@@ -288,7 +288,7 @@ let countrylist = {
     Antarctica: {
         names: {
             guesses: ["antarctica", "antarctique"],
-            fr: "l'Antarctique'",
+            fr: "l'Antarctique",
             en: "Antarctica"
         },
         population: {
@@ -367,7 +367,7 @@ let countrylist = {
             fr: "Tamar (centre administratif)",
             en: "Tamar (Administrative center)"
         },
-        shape: "/shape/hong_kong",
+        shape: "/shape/hong_kong.png",
         claimed: {
             fr: "la Chine",
             en: "China"
@@ -386,8 +386,8 @@ let countrylist = {
         flag: "/flags/macau.png",
         location: "/location/macau.png",
         capital: {
-            fr: "Pareil que le pays.",
-            en: "Same as the country."
+            fr: 'Pareil que le "pays".',
+            en: 'Same as the "country".'
         },
         shape: "/shape/macau.png",
         claimed: {
@@ -419,7 +419,7 @@ let countrylist = {
     },
     Svalbard: {
         names: {
-            guesses: ["Svalbard", "Spitsbergen", "Spitzbergen"],
+            guesses: ["svalbard", "spitsbergen", "spitzbergen"],
             fr: "le Svalbard",
             en: "Svalbard"
         },
@@ -573,7 +573,7 @@ let countrylist = {
     },
     Saint_Pierre_and_Miquelon: {
         names: {
-            guesses: ["pierre and miquelon", "pierre-and-miquelon", "pierre et miquelon", "pierre-et-miquelon"],
+            guesses: ["pierre and miquelon", "pierre-and-miquelon", "pierre et miquelon", "pierre-et-miquelon", "pierre & miquelon"],
             fr: "Saint-Pierre-et-Miquelon",
             en: "Saint Pierre and Miquelon"
         },
@@ -595,7 +595,7 @@ let countrylist = {
     },
     Wallis_and_Futuna: {
         names: {
-            guesses: ["wallis and futuna", "wallis et futuna", "wallis-et-futuna"],
+            guesses: ["wallis and futuna", "wallis et futuna", "wallis-et-futuna", "wallis & futuna"],
             fr: "Wallis-et-Futuna",
             en: "Wallis and Futuna"
         },
@@ -638,94 +638,664 @@ let countrylist = {
         }
     },
     Mount_Athos: {
-
+        names: {
+            guesses: ["mount athos", "agio oros", "mont athos"],
+            fr: "le mont Athos",
+            en: "Mount Athos"
+        },
+        population: {
+            fr: "1 800",
+            en: "1,800"
+        },
+        flag: "/flags/mount_athos.png",
+        location: "/location/mount_athos.png",
+        capital: {
+            fr: "Karyès",
+            en: "Karyes"
+        },
+        shape: "/shape/mount_athos.png",
+        claimed: {
+            fr: "la Grèce",
+            en: "Greece"
+        }
     },
-    Kurdistan: {
-
+    Iraqi_Kurdistan: {
+        names: {
+            guesses: ["kurdistan", "kri"],
+            fr: "le Kurdistan irakien",
+            en: "Iraqi Kurdistan"
+        },
+        population: {
+            fr: "6 200 000",
+            en: "6,200,000"
+        },
+        flag: "/flags/iraqi_kurdistan.png",
+        location: "/location/iraqi_kurdistan.png",
+        capital: {
+            fr: "Erbil (de facto)",
+            en: "Erbil (de facto)"
+        },
+        shape: "/shape/iraqi_kurdistan.png",
+        claimed: {
+            fr: "l'Irak",
+            en: "Iraq"
+        }
     },
     North_Sentinel_Island: {
-
+        names: {
+            guesses: ["sentinel"],
+            fr: "l'île de North Sentinel",
+            en: "North Sentinel Island"
+        },
+        population: {
+            fr: "Entre 40 et 400",
+            en: "Between 40 and 400"
+        },
+        flag: "/flags/north_sentinel_island.png",
+        location: "/location/north_sentinel_island.png",
+        capital: {
+            fr: "Aucune (inconnue)",
+            en: "None (Unknown)"
+        },
+        shape: "/shape/north_sentinel_island.png",
+        claimed: {
+            fr: "l'Inde",
+            en: "India"
+        }
     },
     Karakalpakstan: {
-
+        names: {
+            guesses: ["karakalpakstan", "qaraqalpaqstan"],
+            fr: "le Karakalpakstan",
+            en: "Karakalpakstan"
+        },
+        population: {
+            fr: "2 000 000",
+            en: "2,000,000"
+        },
+        flag: "/flags/karakalpakstan.png",
+        location: "/location/karakalpakstan.png",
+        capital: {
+            fr: "Nukus",
+            en: "Nukus"
+        },
+        shape: "/shape/karakalpakstan.png",
+        claimed: {
+            fr: "l'Ouzbékistan",
+            en: "Uzbekistan"
+        }
     },
     Zanzibar: {
-
+        names: {
+            guesses: ["zanzibar"],
+            fr: "Zanzibar",
+            en: "Zanzibar"
+        },
+        population: {
+            fr: "1 900 000",
+            en: "1,900,000"
+        },
+        flag: "/flags/zanzibar.png",
+        location: "/location/zanzibar.png",
+        capital: {
+            fr: 'Pareil que le "pays".',
+            en: 'Same as the "country".'
+        },
+        shape: "/shape/zanzibar.png",
+        claimed: {
+            fr: "la Tanzanie",
+            en: "Tanzania"
+        }
     },
     Aruba: {
-
+        names: {
+            guesses: ["aruba"],
+            fr: "Aruba",
+            en: "Aruba"
+        },
+        population: {
+            fr: "120 000",
+            en: "120,000"
+        },
+        flag: "/flags/aruba.png",
+        location: "/location/aruba.png",
+        capital: {
+            fr: "Oranjestad",
+            en: "Oranjestad"
+        },
+        shape: "/shape/aruba.png",
+        claimed: {
+            fr: "les Pays-Bas",
+            en: "the Netherlands"
+        }
     },
     Curacao: {
-
+        names: {
+            guesses: ["curacao", "curaçao"],
+            fr: "Curaçao",
+            en: "Curaçao"
+        },
+        population: {
+            fr: "160 000",
+            en: "160,000"
+        },
+        flag: "/flags/curacao.png",
+        location: "/location/curacao.png",
+        capital: {
+            fr: "Willemstad",
+            en: "Willemstad"
+        },
+        shape: "/shape/curacao.png",
+        claimed: {
+            fr: "les Pays-Bas",
+            en: "the Netherlands"
+        }
     },
     Sint_Maarten: {
-
+        names: {
+            guesses: ["maarten", "martin"],
+            fr: "Saint-Martin (Pays-Bas)",
+            en: "Sint Maarten"
+        },
+        population: {
+            fr: "41 000",
+            en: "41,000"
+        },
+        flag: "/flags/sint_maarten.png",
+        location: "/location/sint_maarten.png",
+        capital: {
+            fr: "Philipsburg",
+            en: "Philipsburg"
+        },
+        shape: "/shape/sint_maarten.png",
+        claimed: {
+            fr: "les Pays-Bas",
+            en: "the Netherlands"
+        }
     },
     Guernsey: {
-
+        names: {
+            guesses: ["guernsey", "guernesey", "guernési", "guernesi"],
+            fr: "Guernesey",
+            en: "Guernsey"
+        },
+        population: {
+            fr: "64 000",
+            en: "64,000"
+        },
+        flag: "/flags/guernsey.png",
+        location: "/location/guernsey.png",
+        capital: {
+            fr: "Saint-Pierre-Port",
+            en: "St. Peter Port"
+        },
+        shape: "/shape/guernsey.png",
+        claimed: {
+            fr: "le Royaume-Uni",
+            en: "the United Kingdom"
+        }
     },
     Isle_of_Man: {
-
+        names: {
+            guesses: ["man", "ellan vannin"],
+            fr: "l'Île de Man",
+            en: "the Isle of Man"
+        },
+        population: {
+            fr: "84 000",
+            en: "84,000"
+        },
+        flag: "/flags/isle_of_man.png",
+        location: "/location/isle_of_man.png",
+        capital: {
+            fr: "Douglas",
+            en: "Douglas"
+        },
+        shape: "/shape/isle_of_man.png",
+        claimed: {
+            fr: "le Royaume-Uni",
+            en: "the United Kingdom"
+        }
     },
     Jersey: {
-
+        names: {
+            guesses: ["jersey", "jerri", "jèrri"],
+            fr: "Jersey",
+            en: "Jersey"
+        },
+        population: {
+            fr: "100 000",
+            en: "100,000"
+        },
+        flag: "/flags/jersey.png",
+        location: "/location/jersey.png",
+        capital: {
+            fr: "Saint-Hélier",
+            en: "St Helier"
+        },
+        shape: "/shape/jersey.png",
+        claimed: {
+            fr: "le Royaume-Uni",
+            en: "the United Kingdom"
+        }
     },
     Tokelau: {
-
+        names: {
+            guesses: ["tokelau", "tokélaou", "tokelaou"],
+            fr: "les Tokelau",
+            en: "Tokelau"
+        },
+        population: {
+            fr: "1 600",
+            en: "1,600"
+        },
+        flag: "/flags/tokelau.png",
+        location: "/location/tokelau.png",
+        capital: {
+            fr: "Atafu",
+            en: "Atafu"
+        },
+        shape: "/shape/tokelau.png",
+        claimed: {
+            fr: "la Nouvelle-Zélande",
+            en: "New Zealand"
+        }
     },
     Anguilla: {
-
+        names: {
+            guesses: ["anguilla", "malliouhana"],
+            fr: "Anguilla",
+            en: "Anguilla"
+        },
+        population: {
+            fr: "16 000",
+            en: "16,000"
+        },
+        flag: "/flags/anguilla.png",
+        location: "/location/anguilla.png",
+        capital: {
+            fr: "The Valley",
+            en: "The Valley"
+        },
+        shape: "/shape/anguilla.png",
+        claimed: {
+            fr: "le Royaume-Uni",
+            en: "the United Kingdom"
+        }
     },
     Bermuda: {
-
+        names: {
+            guesses: ["bermuda", "bermudes"],
+            fr: "les Bermudes",
+            en: "Bermuda"
+        },
+        population: {
+            fr: "64 000",
+            en: "64,000"
+        },
+        flag: "/flags/bermuda.png",
+        location: "/location/bermuda.png",
+        capital: {
+            fr: "Hamilton",
+            en: "Hamilton"
+        },
+        shape: "/shape/bermuda.png",
+        claimed: {
+            fr: "le Royaume-Uni",
+            en: "the United Kingdom"
+        }
     },
     British_Virgin_Islands: {
-
+        names: {
+            guesses: ["british virgin", "bvi", "vierges britanniques", "vierge britannique"],
+            fr: "les îles Vierges britanniques",
+            en: "the British Virgin Islands"
+        },
+        population: {
+            fr: "31 000",
+            en: "31,000"
+        },
+        flag: "/flags/british_virgin_islands.png",
+        location: "/location/british_virgin_islands.png",
+        capital: {
+            fr: "Road Town",
+            en: "Road Town"
+        },
+        shape: "/shape/british_virgin_islands.png",
+        claimed: {
+            fr: "le Royaume-Uni",
+            en: "the United Kingdom"
+        }
     },
     Cayman_Islands: {
-
+        names: {
+            guesses: ["cayman", "caiman", "caïman"],
+            fr: "les îles Caïmans",
+            en: "the Cayman Islands"
+        },
+        population: {
+            fr: "68 000",
+            en: "68,000"
+        },
+        flag: "/flags/cayman_islands.png",
+        location: "/location/cayman_islands.png",
+        capital: {
+            fr: "George Town",
+            en: "George Town"
+        },
+        shape: "/shape/cayman_islands.png",
+        claimed: {
+            fr: "le Royaume-Uni",
+            en: "the United Kingdom"
+        }
     },
     Falkland_Islands: {
-
+        names: {
+            guesses: ["falkland", "malvinas", "malouines"],
+            fr: "les îles Malouines",
+            en: "the Falkland Islands"
+        },
+        population: {
+            fr: "3 700",
+            en: "3,700"
+        },
+        flag: "/flags/falkland_islands.png",
+        location: "/location/falkland_islands.png",
+        capital: {
+            fr: "Stanley",
+            en: "Stanley"
+        },
+        shape: "/shape/falkland_islands.png",
+        claimed: {
+            fr: "le Royaume-Uni",
+            en: "the United Kingdom"
+        }
     },
     Gibraltar: {
-
+        names: {
+            guesses: ["gibraltar"],
+            fr: "Gibraltar",
+            en: "Gibraltar"
+        },
+        population: {
+            fr: "33 000",
+            en: "33,000"
+        },
+        flag: "/flags/gibraltar.png",
+        location: "/location/gibraltar.png",
+        capital: {
+            fr: 'Pareil que le "pays"',
+            en: 'Same as the "country"'
+        },
+        shape: "/shape/gibraltar.png",
+        claimed: {
+            fr: "le Royaume-Uni",
+            en: "the United Kingdom"
+        }
     },
     Montserrat: {
-
+        names: {
+            guesses: ["montserrat"],
+            fr: "Montserrat",
+            en: "Montserrat"
+        },
+        population: {
+            fr: "5 000",
+            en: "5,000"
+        },
+        flag: "/flags/montserrat.png",
+        location: "/location/montserrat.png",
+        capital: {
+            fr: 'Plymouth (de jure), Brades (de facto)',
+            en: 'Plymouth (de jure), Brades (de facto)'
+        },
+        shape: "/shape/montserrat.png",
+        claimed: {
+            fr: "le Royaume-Uni",
+            en: "the United Kingdom"
+        }  
     },
     Puerto_Rico: {
-
+        names: {
+            guesses: ["puerto rico", "boriken", "borinquen", "borikén", "borinquén", "porto rico"],
+            fr: "Porto Rico",
+            en: "Puerto Rico"
+        },
+        population: {
+            fr: "3 300 000",
+            en: "3,300,000"
+        },
+        flag: "/flags/puerto_rico.png",
+        location: "/location/puerto_rico.png",
+        capital: {
+            fr: 'San Juan',
+            en: 'San Juan'
+        },
+        shape: "/shape/puerto_rico.png",
+        claimed: {
+            fr: "les États-Unis",
+            en: "the USA"
+        }
     },
     Northern_Mariana_Islands: {
-
+        names: {
+            guesses: ["cnmi", "northern mariana", "mariannes du nord", "mariånas"],
+            fr: "les îles Mariannes du Nord",
+            en: "the Northern Mariana Islands"
+        },
+        population: {
+            fr: "56 000",
+            en: "56,000"
+        },
+        flag: "/flags/northern_mariana_islands.png",
+        location: "/location/northern_mariana_islands.png",
+        capital: {
+            fr: 'Saipan',
+            en: 'Saipan'
+        },
+        shape: "/shape/northern_mariana_islands.png",
+        claimed: {
+            fr: "les États-Unis",
+            en: "the USA"
+        }
     },
     Guam: {
-
+        names: {
+            guesses: ["guam", "guahan", "guåhan"],
+            fr: "Guam",
+            en: "Guam"
+        },
+        population: {
+            fr: "170 000",
+            en: "170,000"
+        },
+        flag: "/flags/guam.png",
+        location: "/location/guam.png",
+        capital: {
+            fr: 'Hagåtña',
+            en: 'Hagåtña'
+        },
+        shape: "/shape/guam.png",
+        claimed: {
+            fr: "les États-Unis",
+            en: "the USA"
+        }
     },
     US_Virgin_Islands: {
-
+        names: {
+            guesses: ["united states virgin", "us virgin", "u.s virgin", "vierges des etats unis", "vierges des états unis", "vierges des états-unis", "vierges des etats-unis", "vierges americaines", "vierges américaines", "virgin islands of the united states", "virgin islands of the us", "virgin islands of the u.s"],
+            fr: "les îles Vierges des États-Unis",
+            en: "the United States Virgin Islands"
+        },
+        population: {
+            fr: "100 000",
+            en: "100,000"
+        },
+        flag: "/flags/us_virgin_islands.png",
+        location: "/location/us_virgin_islands.png",
+        capital: {
+            fr: 'Charlotte-Amélie',
+            en: 'Charlotte Amalie'
+        },
+        shape: "/shape/us_virgin_islands.png",
+        claimed: {
+            fr: "les États-Unis",
+            en: "the USA"
+        }
     },
     American_Samoa: {
-
+        names: {
+            guesses: ["american samoa", "amerika sāmoa", "amerika samoa", "amelika sāmoa", "sāmoa amelika", "samoa americaine", "samoa américaine"],
+            fr: "les Samoa américaines",
+            en: "American Samoa"
+        },
+        population: {
+            fr: "55 000",
+            en: "55,000"
+        },
+        flag: "/flags/american_samoa.png",
+        location: "/location/american_samoa.png",
+        capital: {
+            fr: 'Pago Pago',
+            en: 'Pago Pago'
+        },
+        shape: "/shape/american_samoa.png",
+        claimed: {
+            fr: "les États-Unis",
+            en: "the USA"
+        }
     },
     Turks_and_Caicos_Islands: {
-
+        names: {
+            guesses: ["turks and caicos", "tci", "turks & caicos", "turques et caiques", "turques et caïques", "turques-et-caiques", "turques-et-caïques", "turks-et-caïcos", "turks-et-caicos", "turks et caicos", "turks et caïcos", "turks & caicos", "turks & caïcos", "turques & caïques", "turques & caiques"],
+            fr: "les îles Turques et Caïques",
+            en: "the Turks and Caicos Islands"
+        },
+        population: {
+            fr: "45 000",
+            en: "45,000"
+        },
+        flag: "/flags/turks_and_caicos_islands.png",
+        location: "/location/turks_and_caicos_islands.png",
+        capital: {
+            fr: 'Cockburn Town',
+            en: 'Cockburn Town'
+        },
+        shape: "/shape/turks_and_caicos_islands.png",
+        claimed: {
+            fr: "le Royaume-Uni",
+            en: "the United Kingdom"
+        }  
     },
     Saint_Helena_Ascension_Tristan_da_Cunha: {
-
+        names: {
+            guesses: ["saint helena", "ascension", "tristan da cunha", "sainte-hélène", "sainte hélène", "sainte helene", "sainte-helene", "sainte hélene", "sainte-hélene", "sainte helène", "sainte-helène"],
+            fr: "Sainte-Hélène, Ascension et Tristan da Cunha",
+            en: "Saint Helena, Ascension and tristan da Cunha"
+        },
+        population: {
+            fr: "5 600",
+            en: "5,600"
+        },
+        flag: "/flags/saint_helena_ascension_tristan_da_cunha.png",
+        location: "/location/saint_helena_ascension_tristan_da_cunha.png",
+        capital: {
+            fr: 'Jamestown',
+            en: 'Jamestown'
+        },
+        shape: "/shape/saint_helena_ascension_tristan_da_cunha.png",
+        claimed: {
+            fr: "le Royaume-Uni",
+            en: "the United Kingdom"
+        }  
     },
     Norfolk_Island: {
-
+        names: {
+            guesses: ["norfolk", "norf'k"],
+            fr: "l'île Norfolk",
+            en: "Norfolk Island"
+        },
+        population: {
+            fr: "2 200",
+            en: "2,200"
+        },
+        flag: "/flags/norfolk_island.png",
+        location: "/location/norfolk_island.png",
+        capital: {
+            fr: 'Kingston',
+            en: 'Kingston'
+        },
+        shape: "/shape/norfolk_island.png",
+        claimed: {
+            fr: "l'Australie",
+            en: "Australia"
+        }  
     },
     Christmas_Island: {
-
+        names: {
+            guesses: ["christmas", "krismas"],
+            fr: "l'île Christmas",
+            en: "Christmas Island"
+        },
+        population: {
+            fr: "1 700",
+            en: "1,700"
+        },
+        flag: "/flags/christmas_island.png",
+        location: "/location/christmas_island.png",
+        capital: {
+            fr: 'Flying Fish Cove (The Settlement)',
+            en: 'Flying Fish Cove (The Settlement)'
+        },
+        shape: "/shape/christmas_island.png",
+        claimed: {
+            fr: "l'Australie",
+            en: "Australia"
+        }  
     },
     Cocos_Islands: {
-
+        names: {
+            guesses: ["cocos", "keeling", "kokos"],
+            fr: "les îles Cocos",
+            en: "the Cocos Islands"
+        },
+        population: {
+            fr: "590",
+            en: "590"
+        },
+        flag: "/flags/cocos_islands.png",
+        location: "/location/cocos_islands.png",
+        capital: {
+            fr: 'West Island',
+            en: 'West Island'
+        },
+        shape: "/shape/cocos_islands.png",
+        claimed: {
+            fr: "l'Australie",
+            en: "Australia"
+        }  
     },
     Pitcairn_Islands: {
-
+        names: {
+            guesses: ["pitcairn", "pitkern"],
+            fr: "les îles Pitcairn",
+            en: "the Pitcairn Islands"
+        },
+        population: {
+            fr: "47",
+            en: "47"
+        },
+        flag: "/flags/pitcairn_islands.png",
+        location: "/location/pitcairn_islands.png",
+        capital: {
+            fr: 'Adamstown',
+            en: 'Adamstown'
+        },
+        shape: "/shape/pitcairn_islands.png",
+        claimed: {
+            fr: "le Royaume-Uni",
+            en: "the United Kingdom"
+        }
     }
 }
 
