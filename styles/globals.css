@@ -47,10 +47,6 @@ header p, .prompt p {
     font-size: 110%;
 }
 
-.hint {
-    
-}
-
 #hints-list {
     list-style-type: none;
     padding: 0 2.5vw 0 2.5vw;
@@ -61,7 +57,7 @@ img {
 }
 
 .prompt {
-    margin: 2vw 2.5vw 2vw 2.5vw;
+    margin: 2vw 2.5vw 0 2.5vw;
 }
 
 .prompt input {
