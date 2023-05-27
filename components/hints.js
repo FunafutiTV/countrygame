@@ -6,7 +6,7 @@ import Capital from 'components/capital.js'
 import Shape from 'components/shape.js'
 import Claimed from 'components/claimed.js'
 
-export default function Hints({ country, setCountry, language, midnight, isMidnight, setIsMidnight }) {
+export default function Hints({ country, setCountry, language, midnight, isMidnight, setIsMidnight, win }) {
     let [fetchedList, setFetchedList] = useState(undefined);
     let [hints, setHints] = useState(1);
 
@@ -43,8 +43,8 @@ export default function Hints({ country, setCountry, language, midnight, isMidni
 
   return (
     <>
-    {(hints < 6) ? <button onClick={handleNextHint}>{(language === "fr") ? `Il reste ${6 - hints} indices. Afficher le suivant` : `${6 - hints} hints left. Show the next one`}</button> : null}
-    <ul>
+    {(hints < 6) ? <button className={win ? "hidden-hints" : "hints-left"} onClick={handleNextHint}><span>{(language === "fr") ? `Il reste ${6 - hints} indice${(hints === 5) ? "" : "s"}. Afficher le suivant` : `${6 - hints} hint${(hints === 5) ? "" : "s"} left. Show the next one`}</span></button> : null}
+    <ul id="hints-list">
         {displayComponents([<Flag country={country} language={language}/>,<Population country={country} language={language}/>,
                 <Location country={country} language={language}/>,<Capital country={country} language={language}/>,
                 <Shape country={country} language={language}/>,<Claimed country={country} language={language}/>])

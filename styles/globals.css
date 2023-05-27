@@ -1,0 +1,139 @@
+html {
+    font-size: 2vw;
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(90deg, rgba(226,192,179,0.5) 0%, rgba(192,230,182,0.5) 50%, rgba(221,222,167,0.5) 100%);
+  }
+
+main {
+    margin-top: 1vw;
+}
+
+#language-picker {
+    text-align: right;
+    position: absolute;
+    right: 3vw;
+    top: 1vw;
+}
+
+#language-picker button {
+    width: 10vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-weight: bold;
+}
+
+#language-picker .en {
+    background-image: url('../public/flags/uk.png');
+}
+
+#language-picker .fr {
+    background-image: url('../public/flags/france.png');
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 1;
+}
+
+header {
+    text-align: center;
+    padding: 0 10vw 0 10vw;
+}
+
+header p, .prompt p {
+    font-size: 110%;
+}
+
+.hint {
+    
+}
+
+#hints-list {
+    list-style-type: none;
+    padding: 0 2.5vw 0 2.5vw;
+}
+
+img {
+    max-width: 100%;
+}
+
+.prompt {
+    margin: 2vw 2.5vw 2vw 2.5vw;
+}
+
+.prompt input {
+    border-radius: 8px;
+}
+
+.flag {
+    border: 2px solid black;
+}
+
+.hints-left {
+    margin: 2vw 0 0 2vw;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    color: #FFFFFF;
+    font-family: Phantomsans, sans-serif;
+    justify-content: center;
+    padding: 0.4vw;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.hints-left:active, #hints-left:hover {
+    outline: 0;
+  }
+  
+.hints-left span {
+    background-color: rgb(5, 6, 45);
+    padding: 0.2vw 0.3vw;
+    border-radius: 6px;
+    transition: 300ms;
+  }
+  
+.hints-left:hover span {
+    background: none;
+  }
+
+.hidden-hints {
+    visibility: hidden;
+}
+
+@media screen and (min-width: 48em) {
+    html {
+        font-size: 1.6vw;
+    }
+}
+
+@media screen and (min-width:66em) {
+
+    html {
+        font-size: 1.2vw;
+    }
+    #language-picker button {
+        width: 6.5vw;
+    }
+
+    #hints-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hints-left {
+        padding: 0.2vw;
+    }
+
+    .hint {
+        width: 42.5vw;
+    }
+}
