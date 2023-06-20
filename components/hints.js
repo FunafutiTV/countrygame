@@ -38,7 +38,7 @@ export default function Hints({ country, setCountry, language, midnight, isMidni
   }, [midnight])
 
   if (!fetchedList) {
-    return (<h1>Chargement...</h1>)
+    return (<span className="loader"></span>)
   }
 
   return (
