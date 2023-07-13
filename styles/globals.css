@@ -1,3 +1,5 @@
+/* Global */
+
 html {
     font-size: 2vw;
     font-family: "Roboto", sans-serif;
@@ -7,6 +9,8 @@ html {
 main {
     margin-top: 1vw;
 }
+
+/* Language Picker */
 
 #language-picker {
     text-align: right;
@@ -38,6 +42,8 @@ main {
     z-index: 1;
 }
 
+/* Header */
+
 header {
     text-align: center;
     padding: 0 10vw 0 10vw;
@@ -47,6 +53,8 @@ header p, .prompt p {
     font-size: 110%;
 }
 
+/* Hints */
+
 #hints-list {
     list-style-type: none;
     padding: 0 2.5vw 0 2.5vw;
@@ -54,14 +62,6 @@ header p, .prompt p {
 
 img {
     max-width: 100%;
-}
-
-.prompt {
-    margin: 2vw 2.5vw 0 2.5vw;
-}
-
-.prompt input {
-    border-radius: 8px;
 }
 
 .flag {
@@ -105,6 +105,18 @@ img {
     visibility: hidden;
 }
 
+/* Prompt */
+
+.prompt {
+    margin: 2vw 2.5vw 0 2.5vw;
+}
+
+.prompt input {
+    border-radius: 8px;
+}
+
+/* Loader */
+
 .loader {
     margin: 2.5vw 0 0 2.5vw;
     width: 48px;
@@ -116,6 +128,7 @@ img {
     box-sizing: border-box;
     animation: rotation 1s linear infinite;
   }
+
   .loader::after,
   .loader::before {
     content: '';  
@@ -129,6 +142,7 @@ img {
     transform: translate(150%, 150%);
     border-radius: 50%;
   }
+
   .loader::before {
     left: auto;
     top: auto;
@@ -145,6 +159,8 @@ img {
       transform: rotate(360deg);
     }
   } 
+
+/* Media Queries */
 
 @media screen and (min-width: 48em) {
     html {

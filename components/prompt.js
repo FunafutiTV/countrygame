@@ -12,14 +12,14 @@ export default function Prompt({ country, language, isMidnight, win, setWin }) {
                 }
             })
         }
-    }, [input])
+    }, [input]) // Whenever the input changes, check if it includes the name of the country and set win to true if it does
 
     useEffect(() => {
         if (isMidnight) {
             setWin(false);
             setInput("");
         }
-    }, [isMidnight])
+    }, [isMidnight]) // Everyday at midnight (Paris time), a trigged will be activated in MongoDB that will change the country to find as well as the hints, and it will be displayed directly to the user. To accompany this, we set win to false and clear the input
 
     return (
         <div className="prompt">
@@ -31,6 +31,6 @@ export default function Prompt({ country, language, isMidnight, win, setWin }) {
             : <>
                 <input value={input} placeholder={(language === "fr") ? "Entrez votre réponse" : "Enter your guess"} onChange={(evt) => setInput(evt.target.value)} type="text"/>
             </>}
-        </div>
+        </div> // If win is true, a message indicates that the user has won. If not, a prompt will be displayed to guess the country
     )
 }

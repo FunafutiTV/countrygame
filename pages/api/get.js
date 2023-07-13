@@ -4,9 +4,9 @@ export default async function handler(request, response) {
     try {
         const { mongoClient } = await connectToDatabase();
         const db = mongoClient.db("countrygame");
-        const collection = db.collection("midnight");
+        const collection = db.collection("midnight"); // Connect to the countrygame/midnight database
         const array = await collection
-            .findOne({name: "array"});
+            .findOne({name: "array"}); // Fetch the array which contains the country and order of hints for the day
         response.status(200).json(array);
     } catch (e) {
         console.error(e);

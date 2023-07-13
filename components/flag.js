@@ -5,6 +5,6 @@ export default function Flag({ country, language }) {
         <div className="hint">
             <h2>{language === "fr" ? "Drapeau :" : "Flag :"}</h2>
             <img className="flag" src={countrylist[country].flag}/>
-        </div>
+        </div> // Retrieve the flag image from the countrylist.js document and display it
     )
 }
