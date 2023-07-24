@@ -4,6 +4,7 @@ import { useState } from 'react'
 import Hints from 'components/hints.js'
 import Prompt from 'components/prompt.js'
 import LanguagePicker from 'components/languagepicker.js'
+import Footer from 'components/footer.js'
   
 export default function Home() {
   let [country, setCountry] = useState(undefined);
@@ -30,6 +31,7 @@ export default function Home() {
         </header>
         <Prompt country={country} language={language} isMidnight={isMidnight} win={win} setWin={setWin}/>
         <Hints country={country} setCountry={setCountry} language={language} midnight={midnight} isMidnight={isMidnight} setIsMidnight={setIsMidnight} win={win}/>
+        <Footer/>
       </main>
     </div>
   ) // Create the User Interface using the main components
