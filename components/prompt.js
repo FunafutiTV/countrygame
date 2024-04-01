@@ -24,9 +24,9 @@ export default function Prompt({ country, language, isMidnight, win, setWin }) {
     return (
         <div className="prompt">
             {win ? (language === "fr") ? <p>
-                <strong>Félicitations ! Ce presque-pays est bien {countrylist[country].names.fr}. Revenez demain pour un nouveau pays !</strong>
+                Félicitations ! Ce presque-pays est bien <strong>{countrylist[country].names.fr}</strong>. Revenez demain pour un nouveau pays !
             </p> : <p>
-                <strong>Congratulations ! This almost country is indeed {countrylist[country].names.en}. Comeback tomorrow for a new country !</strong>
+                Congratulations ! This almost country is indeed <strong>{countrylist[country].names.en}</strong>. Comeback tomorrow for a new country !
             </p>
             : <>
                 <input value={input} placeholder={(language === "fr") ? "Entrez votre réponse" : "Enter your guess"} onChange={(evt) => setInput(evt.target.value)} type="text"/>
