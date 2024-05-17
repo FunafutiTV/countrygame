@@ -2,7 +2,7 @@
 
 ## Country game
 
-This is a game website where the goal is to guess the "almost country" randomly chosen everyday using hints.
+This is a game website where the goal is to guess the "almost country" randomly chosen everyday using hints. The website in available in English and French.
 
 ### 60 seconds demonstration video
 
@@ -31,7 +31,7 @@ Stack :
 
 ## Country game
 
-Il s'agit du site d'un jeu dont le but est de deviner le "presque pays" choisi au hasard chaque jour, en utilisant une série d'indices.
+Il s'agit du site d'un jeu dont le but est de deviner le "presque pays" choisi au hasard chaque jour, en utilisant une série d'indices. Le site est disponible en anglais et en français.
 
 ### Vidéo de démonstration en 60 secondes
 
